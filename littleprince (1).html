@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<html lang='en-US'>
+<head>
+<style type="text/css">
+
+#b612 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border : 0;
+	margin : 0;
+	display: block;
+	z-index:-1;
+    position: absolute;
+	
+}
+
+body{
+	background-image:url(sfondo4.png);
+	border : 0;
+	margin : 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#score{
+	position: absolute;
+	width: 5%;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Times';
+	line-height: 20px;
+  	text-align: right;
+
+}
+
+#game {
+	/*background-color:rgba(153, 204, 255, 0.3);*/
+	visibility: hidden;
+	color: white;
+	height: 100%;
+	z-index:3;
+	font-size: 100px;
+	
+	text-align: center;
+	line-height: 200px;
+}
+
+
+ p {
+	/*background-color:rgba(153, 204, 255, 0.3);*/
+	
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 550px;
+	font-style: italic;
+}
+#start {
+
+	margin-top: 320px;
+	margin-left: 245px;
+	background-color: transparent; 
+	color: white;
+	border: none;
+	font-size: 50px;
+	text-align: left;
+
+
+}
+</style></head>
+<!--<script src="three\build\three.js"></script>-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.js"></script>
+
+<script src="lib/OrbitControls.js"></script>
+<script src="lib/OBJLoader.js"></script>
+<script src="lib/MTLLoader.js"></script>
+<script src="lib/LoaderSupport.js"></script>
+<script src="lib/CanvasRenderer.js"></script>
+<script type="text/javascript" src="littleprince2.js"></script>
+<body>
+<div id="b612">
+	<div id="score">
+		<button id="start" type="button" onclick="setup()">START</button>
+	</div>
+	
+</div>
+<div id = "game">
+  </div>
+
+</body>
+</html>
